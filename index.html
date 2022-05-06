@@ -1,17 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="msapplication-TileColor" content="#0E0E0E">
-    <meta name="template-color" content="#0E0E0E">
+    <meta name="msapplication-TileColor" content="#1102f8">
+    <meta name="template-color" content="#1102f8">
     <link rel="manifest" href="manifest.json" crossorigin>
     <meta name="msapplication-config" content="browserconfig.xml">
     <meta name="description" content="Index page">
     <meta name="keywords" content="index, page">
     <meta name="author" content="">
+    <meta name="theme-color" content="#1102f8">
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
     <title>Braasc</title>
     <link href="assets/css/bundle.css" rel="stylesheet">
@@ -47,7 +48,7 @@
                     </div>
                 </div>
                 <div class="header-right">
-                    <div class="block-signin"><a class="btn btn-blue hover-up" href="contacto.html">Contáctanos</a></div>
+                    <div class="block-signin"><a class="btn btn-blue hover-up" href="#contacto">Contáctanos</a></div>
                 </div>
             </div>
         </div>
@@ -63,7 +64,7 @@
                                 <li><a class="active" href="quienes-somos.html">Quiénes somos</a></li>
                                 <li class=""><a href="servicios.html">Servicios</a></li>
                                 <li class=""><a href="#clientes">Clientes</a></li>
-                                <li class=""><a href="contacto.html">Contáctanos</a></li>
+                                <li class=""><a href="#contacto">Contáctanos</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -74,46 +75,86 @@
     <main class="main">
         <section class="section-box">
             <div class="banner-hero banner-1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <h1 class="text-display-2" style="color: #ffffff !important;">Especialistas en <span style="color: #47c6fb;">negocios tecnológicos</span> e innovación</h1>
-                            <p class="text-body-lead-large color-white mt-40 pr-40">Somos una firma de servicios completos y estamos aquí para ayudarte.</p>
-                            <div class="mt-40"><a class="btn btn-white icon-arrow-right hover-up" href="contacto.html">Contáctanos</a><a class="btn btn-link icon-arrow-right-white color-white text-heading-6" href="quienes-somos.html">Conocer más</a></div>
-                        </div>
-                        <div class="col-lg-5 d-none d-lg-block">
-                            <div class="banner-imgs">
-                                <img class="img-responsive shape-2" alt="Agon" src="assets/imgs/portada2.webp" style="border-radius: 25px; bottom: -20px !important;">
+                <div class="banner-bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h1 class="text-display-2" style="color: #ffffff !important;">Especialistas en <span style="color: #47c6fb;">negocios tecnológicos</span> e innovación</h1>
+                                <p class="text-body-lead-large color-white mt-40 pr-40">Somos una firma de servicios completos y estamos aquí para ayudarte.</p>
+                                <div class="mt-40"><a class="btn btn-white icon-arrow-right hover-up" href="/#contacto">Contáctanos</a><a class="btn btn-link icon-arrow-right-white color-white text-heading-6" href="quienes-somos.html">Conocer más</a></div>
+                            </div>
+                            <div class="col-lg-5 d-none d-lg-block">
+                                <div class="banner-imgs">
+                                    <img class="img-responsive shape-2" alt="Agon" src="assets/imgs/portada2.webp" style="border-radius: 25px; bottom: -20px !important;">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--<div class="section-box overflow-visible mt-70">
+        <section class="section-box overflow-visible mt-140" id="clientes">
             <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                        <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-1.svg"></a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                        <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-2.svg"></a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                        <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-3.svg"></a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                        <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-4.svg"></a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                        <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-5.svg"></a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                        <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-6.svg"></a>
+                <h2 class="text-heading-3 text-center color-gray-900 mb-60">Nuestros clientes</h2>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="list-partners">
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="1" src="assets/imgs/slide/247.webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="2" src="assets/imgs/slide/247 (1).webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="3" src="assets/imgs/slide/247 (2).webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="4" src="assets/imgs/slide/247 (3).webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="5" src="assets/imgs/slide/247 (4).webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="6" src="assets/imgs/slide/247 (5).webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="7" src="assets/imgs/slide/247 (6).webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="8" src="assets/imgs/slide/247 (7).webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="9" src="assets/imgs/slide/247 (8).webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="10" src="assets/imgs/slide/247 (9).webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="11" src="assets/imgs/slide/247 (10).webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="12" src="assets/imgs/slide/247 (11).webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="13" src="assets/imgs/slide/247 (12).webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="14" src="assets/imgs/slide/247 (13).webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="15" src="assets/imgs/slide/247 (14).webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="16" src="assets/imgs/slide/247 (15).webp"></a>
+                            </li>
+                            <li>
+                                <a class="item-logo box-hover-shadow hover-up" href="#"><img alt="17" src="assets/imgs/slide/247 (16).webp"></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>-->
+        </section>
         <section class="section-box">
             <div class="container mt-120">
                 <div class="bg-9 bdrd-58 pattern-white pb-60">
@@ -215,9 +256,9 @@
         </section>
         <section class="section-box">
             <div class="container mt-100">
-                <div class="row">
-                    <div class="col-lg-6 col-sm-12 block-img-we-do"><img class="bdrd-16 img-responsive" src="assets/imgs/profiles/enrique-baca_foto.webp" alt="Agon"></div>
-                    <div class="col-lg-6 col-sm-12 block-we-do"><!--<span class="tag-1">What We Do, What You Get</span>-->
+                <div class="row" style="justify-content: space-around;">
+                    <div class="col-lg-4 col-sm-12 block-img-we-do"><img class="bdrd-16 img-responsive" src="assets/imgs/profiles/enrique-baca_foto.webp" alt="Agon"></div>
+                    <div class="col-lg-6 col-sm-12 block-we-do">
                         <h3 class="text-heading-1 mt-30">Experiencia</h3>
                         <p class="text-body-lead-large color-gray-600 mt-30">Nuestro equipo está compuesto por abogados de alto nivel,
                             con estudios y maestrias en los campos del derecho,
@@ -227,19 +268,15 @@
                         <div class="row">
                             <div class="col-lg-6 col-sm-6 col-12 mt-50">
                                 <h4 class="text-heading-6 icon-leaf">Responsabilidad</h4>
-                                <!--<p class="text-body-excerpt color-gray-600 mt-15">The latest design trends meet hand-crafted templates.</p>-->
                             </div>
                             <div class="col-lg-6 col-sm-6 col-12 mt-50">
                                 <h4 class="text-heading-6 icon-leaf">Ética</h4>
-                                <!--<p class="text-body-excerpt color-gray-600 mt-15">The latest design trends meet hand-crafted templates.</p>-->
                             </div>
                             <div class="col-lg-6 col-sm-6 col-12 mt-50">
                                 <h4 class="text-heading-6 icon-leaf">Lealtad</h4>
-                                <!--<p class="text-body-excerpt color-gray-600 mt-15">The latest design trends meet hand-crafted templates.</p>-->
                             </div>
                             <div class="col-lg-6 col-sm-6 col-12 mt-50">
                                 <h4 class="text-heading-6 icon-leaf">Orden</h4>
-                                <!--<p class="text-body-excerpt color-gray-600 mt-15">The latest design trends meet hand-crafted templates.</p>-->
                             </div>
                             <div class="mt-40">
                                 <a class="btn btn-default icon-arrow-right" href="quienes-somos.html">Conócenos</a>
@@ -249,106 +286,42 @@
                 </div>
             </div>
         </section>
-        <section class="section-box section-green mt-10" style="background: linear-gradient(45deg, rgba(17,2,248,1) 0%, rgba(71,198,251,1) 100%) !important;" id="clientes">
-            <div class="container mt-110">
-                <div class="row">
-                    <div class="col-lg-9 col-sm-8">
-                        <h3 class="text-heading-1 color-white mb-10">Nuestros clientes</h3>
-                        <!--<p class="text-body-lead-large color-gray-600">Know about our clients, we are a woldwide corporate brand</p>-->
-                    </div>
-                </div>
-            </div>
-            <div class="container mt-80">
-                <div class="box-swiper">
-                    <div class="swiper-container swiper-group-4">
-                        <div class="swiper-wrapper pb-70 pt-5">
-                            <div class="swiper-slide active">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247.webp" alt="Cliente 1">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (1).webp" alt="Cliente 2">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (2).webp" alt="Cliente 3">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (3).webp" alt="Cliente 4">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (4).webp" alt="Cliente 5">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (5).webp" alt="Cliente 6">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (6).webp" alt="Cliente 7">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (7).webp" alt="Cliente 8">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (8).webp" alt="Cliente 9">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (9).webp" alt="Cliente 10">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (10).webp" alt="Cliente 11">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (11).webp" alt="Cliente 12">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (12).webp" alt="Cliente 13">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (13).webp" alt="Cliente 14">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (14).webp" alt="Cliente 15">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (15).webp" alt="Cliente 16">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-grid-style-2 hover-up">
-                                    <img src="./assets/imgs/slide/247 (16).webp" alt="Cliente 17">
-                                </div>
-                            </div>
+        <section class="section-box bg-9 box-gray-100 mt-100 mb-20" id="contacto">
+            <div class="container">
+                <div class="icon-wave">
+                    <div class="row">
+                        <div class="col-lg-12 mb-60">
+                            <h2 class="text-heading-3 color-gray-900 mt-10">Contáctanos</h2>
                         </div>
-                        <div class="swiper-pagination swiper-pagination3"></div>
+                        <div class="col-lg-4 mb-40">
+                            <h4 class="text-heading-6 color-gray-900 icon-home mb-10 mt-10">Nosotros</h4>
+                            <p class="text-body-text color-gray-600">Av. Pablo Carriquiry 478, San Isidro 15036, Of. 702 - San Isidro, Lima.</p>
+                            <p class="text-body-text color-gray-600">(+51) 978 488 818</p>
+                            <p class="text-body-text color-gray-600">info@braasc.com</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <form action="http://www.braasc.com/contacto/registrar">
+                                <input type="hidden" name="_token" value="XSQ1MRL4rbiqHxONrUuSRITgiVmqUHIRR8HJw2Sd">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group"><input class="form-control" id="nombre" placeholder="Nombres y Apellidos" required></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group"><input class="form-control" id="email" placeholder="Correo" required></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group"><input class="form-control" id="empresa" placeholder="Empresa" required></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group"><input class="form-control" id="telefono" placeholder="Teléfono" required></div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group"><textarea class="form-control" id="mensaje" placeholder="Mensaje" required></textarea></div>
+                                    </div>
+                                    <div class="col-lg-12 mt-15"><button class="btn btn-b icon-arrow-right-white mr-40 mb-20" type="submit">Enviar Mensaje</button><br class="d-lg-none d-block"><span class="text-body-text-md color-gray-500 mb-20"></span></div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -374,7 +347,7 @@
                         <li><a href="#">Inicio</a></li>
                         <li><a href="quienes-somos.html">Quiénes somos</a></li>
                         <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="contacto.html">Contáctanos</a></li>
+                        <li><a href="#contacto">Contáctanos</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 mb-30">
