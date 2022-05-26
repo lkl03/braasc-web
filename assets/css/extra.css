@@ -1,6 +1,59 @@
 .section-banner { background: rgb(17,2,248); background: linear-gradient(45deg, rgba(17,2,248,1) 0%, rgba(71,198,251,1) 100%); }
 .section-header { background: rgb(17,2,248); background: linear-gradient(45deg, rgba(17,2,248,1) 0%, rgba(71,198,251,1) 100%); }
 
+.list-disc-blue {
+    list-style: none;
+}
+
+.list-disc-blue li {
+    display: flex;
+}
+
+.list-disc-blue li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(17,2,248); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.overlay {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.popup {
+    background: #F8F8F8;
+    border: 1px solid #E4E7EC;
+    border-radius: 16px;
+    padding: 10px 100px 10px 100px;
+    text-align: center;
+    width: 75%;
+    height: auto;
+    transition: .3s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+}
+
+.popup.active{
+    transform: scale(1);
+    opacity: 1;
+}
+
 @media only screen and (min-width: 820px) {
     .hgt {
         height: 497px !important;
@@ -13,6 +66,27 @@
     }
     .hgt3 {
         height: 516px !important;
+    }
+    .fb45 {
+        flex-basis: 45%;
+    }
+    .dnone {
+        display: none;
+    }
+    .dflex {
+        display: flex;
+    }
+    .dflex-none {
+        display: flex;
+    }
+    .t-end {
+        text-align: end;
+    }
+    .t-center {
+        text-align: center;
+    }
+    .ml25 {
+        margin-left: 25%;
     }
 }
 
@@ -28,5 +102,29 @@
     }
     .hgt3 {
         height: auto !important;
+    }
+    .fb45 {
+        flex-basis: inherit;
+        margin-top: 50px;
+    }
+    .dnone {
+        display: block;
+        margin-top: 20px;
+    }
+    .dflex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .dflex-none {
+        display: none;
+    }
+    .t-end{
+        text-align: inherit;
+    }
+    .t-center {
+        text-align: inherit;
+    }
+    .ml25 {
+        margin-left: inherit;
     }
 }
